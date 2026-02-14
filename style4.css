@@ -1,0 +1,173 @@
+body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(to right,#dcd3c9,#b1cfeb);;}
+
+/* HEADER  */
+.main-header { padding: 20px 0; background: linear-gradient(to right,#dcd3c9,#b1cfeb);}
+.logo { font-weight: bold; color: #2563eb; font-size: 24px; text-decoration: none;}
+.menu-box { background: #fff; padding: 8px 20px; border-radius: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);}
+.menu { color: #2563eb; padding: 8px 18px; border-radius: 25px; text-decoration: none; font-weight: 500;}
+.menu.active,.menu:hover {background: #2563eb; color: white;}
+.phone { color: #2563eb; font-weight: 600;}   
+
+/* HERO SECTION */
+.hero { padding: 80px 15px; background: linear-gradient(to right, #dcd3c9, #b1cfeb);}
+/* Heading */
+.hero h1 { font-size: 3rem; font-weight: 700; color: #1e3a8a;}
+/* Paragraph */
+.hero p {color: #1e3a8a; max-width: 500px; line-height: 1.7;}
+/* Button */
+.btn-custom { background: #fff; border: none;  padding: 12px 30px; border-radius: 30px; color: #1f3c88; font-weight: 500; transition: 0.3s;}
+.btn-custom:hover { opacity: 0.9;}
+/* Image */
+.hero-img { width: 100%; max-width: 350px; height: auto; margin: auto; display: block;}
+
+/* Tablet */
+@media (max-width: 992px) {
+.hero h1 {font-size: 2.4rem;}
+.hero p { max-width: 100%; }
+}
+/* Mobile */
+@media (max-width: 768px) {
+.hero { text-align: center; padding: 60px 15px;}
+.hero h1 { font-size: 2rem;}
+.hero p { margin: auto; font-size: 0.95rem;}
+.hero-img { max-width: 260px; margin-top: 30px;}}
+/* Small Mobile */
+@media (max-width: 480px) {
+.hero h1 { font-size: 1.7rem;}
+.hero-img { max-width: 220px;}
+.btn-custom { padding: 10px 25px; font-size: 0.9rem; }
+}
+/* SECTION */
+.pricing-section{ padding:80px 15px; background: linear-gradient(to right,#dcd3c9,#b1cfeb);}
+/* TITLE */
+.section-title h2{font-weight:700; font-size:clamp(28px, 5vw, 42px); color:#243b6b;}
+.section-title p{ max-width:600px; margin:auto; font-size:14px; color:#243b6b;}
+/* CARD */
+.pricing-card{ background:#fff; padding:40px 25px; border-radius:30px; text-align:center; transition:0.3s; height:100%; display:flex; flex-direction:column; justify-content:space-between;}
+.pricing-card:hover{ transform:translateY(-8px); box-shadow:0 15px 35px rgba(0,0,0,0.1);}
+.plan-title{ font-weight:700; font-size:22px; color:#243b6b;}
+.price{ font-size:clamp(32px,4vw,42px); font-weight:700; color:#243b6b;}
+.price span{ font-size:14px; font-weight:400;}
+.feature-list{ list-style:none; padding:0; margin:25px 0; flex-grow:1;}
+.feature-list li{ padding:12px 0; border-bottom:1px solid #eee; font-size:14px;}
+.feature-list li:last-child{ border-bottom:none;}
+.btn-choose{ background:#2f65d9; color:#fff; padding:12px 30px; border:none; border-radius:30px; font-weight:600; width:100%; transition:0.3s;}
+.btn-choose:hover{background:#244fb3;}
+/* ACTIVE PLAN */
+.active-plan{ background:#2f65d9; color:#fff;}
+.active-plan .plan-title,
+.active-plan .price,
+.active-plan .feature-list li{ color:#fff;}
+.active-plan .feature-list li{border-color:rgba(255,255,255,0.2);}
+.active-plan .btn-choose{ background:#fff; color:#2f65d9;}
+.active-plan .btn-choose:hover{ background:#f1f1f1;}
+
+/* RESPONSIVE  */
+@media(max-width:576px){
+.pricing-section{ padding:50px 10px;}
+.pricing-card{ padding:30px 20px;}
+}
+@media (max-width: 768px) {
+.hero { text-align: center;}
+.hero img { margin-top: 40px;}
+}
+
+/* MAIN SECTION */
+.testimonial-section2 { padding: 60px 0; background-color: white;}
+/* LEFT CONTENT */
+.left-content h2 { font-size: 40px; font-weight: bold; color: #1f3c88;}
+.left-content p { color: #205ba8; line-height: 1.7; margin-top: 20px;}
+.percentage-box { border:2px solid #2d6cdf; color: #2e7add; font-size: 32px; font-weight: bold; width: 120px; height: 70px; display: flex; align-items: center; justify-content: center; border-radius: 15px; margin-bottom: 20px;}
+
+/* IMAGES AREA */
+.image-area { position: relative; display: flex; justify-content: center; align-items: flex-end; gap: 15px; margin-top: 40px; padding-bottom: 60px; }
+.person-img { width: 110px; height: 150px; object-fit: cover; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);}
+/* MIDDLE IMAGE BIGGER */
+.person-img.main { width: 140px; height: 190px; margin-bottom: 15px; z-index: 2;}
+/* RATING CARD */
+.rating-card { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); background: #fff; padding: 12px 22px; border-radius: 18px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 12px; width: 90%; max-width: 320px;}
+.star { width: 42px; height: 42px; background: #ffe7d1; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; color: orange; flex-shrink: 0;}
+
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+.image-area { justify-content: flex-end; gap: 20px; padding-bottom: 0;}
+.person-img { width: 200px; height: 260px;}
+.person-img.main {width: 230px; height: 300px; margin-bottom: 0;}
+.rating-card { width: auto; max-width: none; left: auto; right: 20px; transform: none; bottom: -30px; }}
+
+body{ font-family:'Poppins', sans-serif;}
+
+/*FAQ-SECTION */
+.faq-section{padding:50px 0; }
+/* TITLE */
+.faq-title{ font-size:48px; font-weight:700; color:#1f3c88; margin-bottom:50px;}
+/* Accordion Style */
+.accordion-item{ background:#f8f9fb; border:none; border-radius:20px !important; margin-bottom:20px; overflow:hidden;}
+.accordion-button{ background:#f8f9fb; font-weight:600; color:#1f3c88;
+ padding:25px; border-radius:20px !important; box-shadow:none !important;}
+.accordion-button:not(.collapsed){ background:#f8f9fb; color:#1f3c88;}
+/* Remove default arrow */
+.accordion-button::after{ background-image:none; content:'+'; font-size:24px; font-weight:700; transform:none;}
+/* Change + to - when open */
+.accordion-button:not(.collapsed)::after{content:'−';}
+/* Answer */
+.accordion-body{ padding:25px; color: #1f3c88; line-height:1.7;}
+
+/* RESPONSIVE  */
+@media(max-width:768px){
+.faq-title{ font-size:32px; text-align:center;}
+}
+
+/* HERO1 SECTION  */
+.hero1-section { background-image: url("./images/hero-6.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; margin: 60px auto; max-width: 95%; border-radius: 30px; padding: 120px 20px;}
+/*  CONTENT  */
+.hero1-content { color: white;}
+/* ICON */
+.hero1-icon { font-size: 45px; margin-bottom: 25px;}
+/* HEADING */
+.hero1content h1 { font-size: 42px; font-weight: bold; margin-bottom: 35px;}
+/* BUTTON */
+.btn-custom1{ background: #fff; border: none; padding: 12px 30px; border-radius: 30px; color: #1f3c88; font-weight: 500;}
+.btn-custom1:hover{  opacity: 0.9;}
+
+/* RESPONSIVE  */
+@media (max-width: 768px) {
+  .hero1-content h1 { font-size: 28px;}
+  .hero1-section { padding: 80px 15px; background-attachment: scroll;}
+}
+
+/*  BASIC RESET*/
+body { margin: 0; font-family: Arial, sans-serif;}
+/* FOOTER MAIN */
+.main-footer { background: white; padding: 80px 0 40px; color: #0d3b8a;}
+/* LEFT */
+.footer-left p { line-height: 1.7;  font-size: 15px;}
+/* SOCIAL ICONS */
+.social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #f1f5ff; color: #2563eb;  margin-right: 8px; text-decoration: none; transition: 0.3s;}
+.social-icons a:hover { background: #2563eb; color: white;}
+/* CENTER */
+.footer-center h2 { color: #2563eb; font-weight: bold; margin: 15px 0;}
+.footer-icon { font-size: 30px; color: #2563eb; margin-bottom: 10px;}
+.contact-text { font-size: 16px;}
+/* BUTTON */
+.contact-btn { background: #2563eb; color: white; padding: 10px 30px; border-radius: 25px; text-decoration: none;}
+.contact-btn:hover { background: #1e40af; color: white;}
+/* RIGHT */
+.footer-right h5 { font-weight: bold; margin-bottom: 15px;}
+.footer-right ul { list-style: none; padding: 0;}
+.footer-right ul li { margin-bottom: 8px;}
+.footer-right ul li a { text-decoration: none; color: #0d3b8a;}
+.footer-right ul li a:hover { color: #2563eb;}
+/* BOTTOM */
+.footer-bottom { margin-top: 25px; font-size: 14px; color: #0d3b8a;}
+
+/*  RESPONSIVE*/
+@media (max-width: 768px) {
+.main-footer { text-align: center;}
+.footer-right { text-align: center !important;}
+}
+
+
+
+
